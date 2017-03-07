@@ -7,7 +7,7 @@ library(ROCR)
 library(glmnet)
 library(rworldmap) # install.packages("rworldmap",dependencies=TRUE)
 library(maps)
-FILE_PATH <- "Desktop/hiv.csv"
+FILE_PATH <- "/hiv.csv"
 hiv_tibble <- read_csv(FILE_PATH)
 hiv_tibble <- hiv_tibble[,-c(2:12)] # only 1990-2011.
 hiv_tibble <- hiv_tibble[rowSums(is.na(hiv_tibble)) != ncol(hiv_tibble)-1,] # removes rows that have only NA.

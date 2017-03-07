@@ -5,7 +5,7 @@ library(tibble)
 library(nnet)
 library(ROCR)
 library(glmnet)
-library(rworldmap) # install.packages(rworldmap)
+library(rworldmap) # install.packages("rworldmap",dependencies=TRUE)
 library(maps)
 FILE_PATH <- "Desktop/hiv.csv"
 hiv_tibble <- read_csv(FILE_PATH)
